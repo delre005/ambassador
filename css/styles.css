@@ -1,0 +1,358 @@
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     box-sizing: border-box;
+   }
+   body {
+     background-color: #1C1C1C;
+     background-image: url('../images/ambass1.jpeg');
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: contain;
+   }
+
+   p {
+     padding-bottom: 15px;
+   }
+
+   .menu-container{
+     position: fixed;
+     left: 0;
+     right: 0;
+     margin: auto;
+     top: 0px;
+     z-index: 100;
+   }
+   nav {
+     text-align: center;
+   }
+   .menu {
+     display: inline-block;
+   }
+   .menu>li {
+     float: left;
+     color: #FFB36D;
+     width: 250px;
+     height: 60px;
+     line-height: 60px;
+     background: #600009;
+     cursor: pointer;
+     font-size: 40px;
+     font-family: 'Amador';
+     font-style: normal;
+   }
+   .sub-menu {
+     transform: scale(0);
+     transform-origin: top center;
+     transition: all 300ms ease-in-out;
+   }
+   .sub-menu li {
+     font-size: 24px;
+     background: white;
+     padding: 8px 0;
+     color: black;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+     transform: scale(0);
+     transform-origin: top center;
+     transition: all 300ms ease-in-out;
+   }
+   .menu li:hover {
+     background: #80020E;
+   }
+   .sub-menu li:last-child {
+     border-bottom: 0;
+   }
+   .sub-menu li:hover {
+     background: #F1F1F1;
+   }
+   .menu>li:hover .sub-menu li {
+     transform: scale(1);
+   }
+   .menu>li:hover .sub-menu {
+     transform: scale(1);
+   }
+
+
+
+
+.background {
+  /* The image used */
+ background-image: url("img_girl.jpg");
+
+ /* Full height */
+ height: 50%;
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+
+
+.rectangle-menu {
+  height: 426px;
+  width: 960px;
+  background: rgba(0, 0, 0, 0.66);
+  margin: auto;
+  object-position: center;
+  margin-top: 300px;
+  color: white;
+  font-family: 'Amador';
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.menu-menu>li {
+  float: center;
+  color: #white;
+  width: 202px;
+  height: 101px;
+  line-height: 60px;
+  background: rgba(0, 0, 0, 0.41);
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+  font-size: 64px;
+  font-family: 'Amador';
+  font-style: normal;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: relative;
+  top: 30px;
+  padding-top: 20px;
+
+}
+
+.menu-menu li:hover {
+  background: rgba(0, 0, 0, 0.10);
+  border: 2px solid #FFFFFF;
+}
+
+
+.menu-take-bake>li {
+  float: center;
+  color: #white;
+  width: 349px;
+  height: 101px;
+  line-height: 60px;
+  background: rgba(0, 0, 0, 0.41);
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+  font-size: 64px;
+  font-family: 'Amador';
+  font-style: normal;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: relative;
+  top: 60px;
+  padding-top: 20px;
+
+}
+
+.menu-take-bake li:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px solid #FFFFFF;
+}
+
+
+.poem {
+  color: white;
+  font-size: 128px;
+  font-family: 'Vincente';
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 700px;
+  margin-bottom: 10px;
+}
+.poem-para {
+  color: white;
+  font-size: 28px;
+  font-family: 'Trade Gothic Next LT Pro';
+  width: 720px;
+  height: 1148px;
+  margin: auto;
+  width: 50%;
+  line-height: 40px;
+  margin-top: 20px;
+}
+.history {
+  color: white;
+  font-size: 128px;
+  font-family: 'Vincente';
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.history-para {
+  color: white;
+  font-size: 28px;
+  font-family: 'Trade Gothic Next LT Pro';
+  font-style: condensed;
+  width: 720px;
+  height: 1148px;
+  margin: auto;
+  width: 50%;
+  line-height: 40px;
+  margin-top: 20px;
+}
+.rectangle {
+  height: 15px;
+  width: 720px;
+  background-color: #600009;
+  margin: auto;
+  object-position: center;
+}
+
+
+.photos {
+  color: white;
+  font-size: 128px;
+  font-family: 'Vincente';
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 200px;
+  margin-bottom: 10px;
+}
+.rectangle-photo {
+  height: 15px;
+  width: 400px;
+  background-color: #600009;
+  margin: auto;
+  object-position: center;
+  margin-bottom: 100px;
+}
+
+.photo-1 {
+  width: 587px;
+  height: 391px;
+  position: relative;
+  margin: auto;
+  object-position: center;
+  margin-bottom: 20px;
+}
+.photo-2 {
+  width: 587px;
+  height: 391px;
+  position: relative;
+  margin: auto;
+  object-position: center;
+  margin-bottom: 20px;
+}
+.photo-3 {
+  width: 587px;
+  height: 391px;
+  position: relative;
+  margin: auto;
+  object-position: center;
+  margin-bottom: 20px;
+}
+.photo-4 {
+  width: 587px;
+  height: 391px;
+  position: relative;
+  margin: auto;
+  object-position: center;
+}
+
+.reviews {
+  color: white;
+  font-size: 128px;
+  font-family: 'Vincente';
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 200px;
+  margin-bottom: 10px;
+}
+.rectangle-reviews {
+  height: 15px;
+  width: 450px;
+  background-color: #600009;
+  margin: auto;
+  object-position: center;
+  margin-bottom: 100px;
+}
+
+
+.yelp-review {
+  margin: auto;
+  object-position: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.footer {
+  width: 100%;
+  height: 480px;
+  background-color: black;
+  margin: auto;
+  margin-top: 300px;
+  
+
+}
+
+.map {
+  position: relative;
+  float: right;
+  right: 50px;
+  margin-top: 75px;
+}
+
+.contact {
+  color: white;
+  font-family: 'Trade Gothic Next LT Pro';
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 200;
+  color: white;
+  position: relative;
+  padding-left: 60px;
+  padding-top: 45px;
+  line-height: 40px;
+}
+
+.contact-ambass {
+  margin-bottom: 10px;
+}
+
+.contact-ambass-title {
+  font-family: 'Trade Gothic Next LT Pro';
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.photo-contact {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 60px;
+
+}

@@ -1,0 +1,319 @@
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     box-sizing: border-box;
+
+}
+.menu-items {
+  position: relative;
+  margin-top:200px;
+}
+
+.menu-container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0px;
+  z-index: 100;
+}
+nav {
+  text-align: center;
+}
+.menu {
+  display: inline-block;
+}
+.menu>li {
+  float: left;
+  color: #FFB36D;
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  background: #600009;
+  cursor: pointer;
+  font-size: 40px;
+  font-family: 'Amador';
+  font-style: normal;
+}
+.sub-menu {
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+.sub-menu li {
+  font-size: 24px;
+  background: white;
+  padding: 8px 0;
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+.menu li:hover {
+  background: #80020E;
+}
+.sub-menu li:last-child {
+  border-bottom: 0;
+}
+.sub-menu li:hover {
+  background: #F1F1F1;
+}
+.menu>li:hover .sub-menu li {
+  transform: scale(1);
+}
+.menu>li:hover .sub-menu {
+  transform: scale(1);
+}
+
+
+
+
+h1, p {
+  margin: 0 0 1em 0;
+}
+
+
+
+.title {
+  font-family: 'Amador';
+  font-size: 300px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  margin-top: 150px;
+}
+
+
+.rectangle {
+  height: 15px;
+  width: 870px;
+  background-color: #600009;
+  margin: auto;
+  object-position: center;
+  margin-top: 30px;
+}
+
+
+
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 20px;
+  display: grid;
+  grid-gap: 10px;
+  padding: 30px;
+}
+
+@media screen and (min-width: 500px) {
+
+  /* no grid support? */
+  .details {
+    float: left;
+    width: 19.1489%;
+    font-family: 'Trade Gothic Next LT Pro';
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 25px;
+
+  }
+
+  .price {
+    float: right;
+    width: 79.7872%;
+    font-family: 'Trade Gothic Next LT Pro';
+    font-size: 24px;
+    font-weight: 200;
+
+    text-align: left;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 25px;
+
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    grid-template-columns: 2.5fr 1.5fr;
+  }
+
+  .dish {
+    grid-column: 1 / -1;
+    font-family: 'Vincente';
+    font-size: 44px;
+    /* needed for the floated layout */
+    clear: both;
+  }
+
+
+
+.dish-info{
+  grid-column: 1 / -1;
+  font-family: 'Trade Gothic Next LT Pro';
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 27px;
+  /* needed for the floated layout */
+  clear: both;
+}
+
+.pizza-info{
+  grid-column: 1 / -1;
+  font-family: 'Trade Gothic Next LT Pro';
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 27px;
+  /* needed for the floated layout */
+  clear: both;
+}
+
+.pizza-info p {
+  grid-column: 1 / -1;
+  font-family: 'Trade Gothic Next LT Pro';
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 27px;
+  /* needed for the floated layout */
+  clear: both;
+  margin-top: 20px;
+}
+
+.wrapper > * {
+
+  color: black;
+  border-radius: 5px;
+  border-style: double;
+  border-color: black;
+  border-width: medium;
+  padding: 20px;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+}
+
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}
+
+
+
+
+.menu-take-bake>li {
+  float: center;
+  color: #white;
+  width: 349px;
+  height: 101px;
+  line-height: 60px;
+  background: white;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 64px;
+  font-family: 'Amador';
+  font-style: normal;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: relative;
+  top: 60px;
+  padding-top: 20px;
+
+}
+
+.menu-take-bake li:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  width: 100%;
+  height: 480px;
+
+  background-color: black;
+  margin: auto;
+  margin-top: 300px;
+}
+
+.map {
+  position: relative;
+  float: right;
+  right: 50px;
+  margin-top: 75px;
+}
+
+.contact {
+  color: white;
+  font-family: 'Trade Gothic Next LT Pro';
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 200;
+  color: white;
+  position: relative;
+  padding-left: 60px;
+  padding-top: 45px;
+  line-height: 40px;
+}
+
+.contact-ambass {
+  margin-bottom: 10px;
+}
+
+.contact-ambass-title {
+  font-family: 'Trade Gothic Next LT Pro';
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.photo-contact {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 60px;
+
+}
