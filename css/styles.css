@@ -93,6 +93,10 @@ img {
 
 
 
+
+
+
+
 .background {
   /* The image used */
  background-image: url("img_girl.jpg");
@@ -172,10 +176,6 @@ img {
 
 }
 
-.menu-take-bake li:hover {
-  background: rgba(0, 0, 0, 0.05);
-  border: 2px solid #FFFFFF;
-}
 
 
 .poem {
@@ -192,13 +192,15 @@ img {
   color: white;
   font-size: 28px;
   font-family: 'Trade Gothic Next LT Pro';
-  width: 720px;
-  height: 1148px;
+  text-align: center;
   margin: auto;
   width: 50%;
-  line-height: 40px;
+  line-height: 50px;
   margin-top: 20px;
+  margin-bottom: 300px;
 }
+
+
 .history {
   color: white;
   font-size: 128px;
@@ -314,7 +316,7 @@ img {
   background-color: black;
   margin: auto;
   margin-top: 300px;
-  
+
 
 }
 
